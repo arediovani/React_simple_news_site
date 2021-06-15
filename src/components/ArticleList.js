@@ -3,13 +3,13 @@ import Article from '../components/Article'
 const ArticleList = ({ articles }) => {
     if (articles.length > 1) {
         return (
-            <article class="pv4 bt bb b--black-10 ph3 ph0-l">
+            <div>
                 {
                     articles.map((e, i) => {
                         return <Article articles={e} />
                     })
                 }
-            </article>
+            </div>
         )
     } else {
         return (
